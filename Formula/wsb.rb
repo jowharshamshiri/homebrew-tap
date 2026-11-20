@@ -2,20 +2,21 @@
 class Wsb < Formula
   desc "Workspace tools for git across submodules, version stamping, GitHub, and the workbench"
   homepage "https://github.com/jowharshamshiri/wsb"
-  version "1.666.27449"
+  version "1.688.28724"
   license "Apache-2.0"
 
   on_macos do
-    url "https://releases.bahramj.com/wsb/release/1.666.27449/wsb-1.666.27449-darwin-arm64.tar.gz"
-    sha256 "644d66780d1bc622fe8cbaeea9737aa7dee065b69ac3f1365f61d09a88df27de"
+    url "https://releases.bahramj.com/wsb/release/1.688.28724/wsb-1.688.28724-darwin-arm64.tar.gz"
+    sha256 "9b6639c21e35dba900d359ec55d62e3a9f4fde31cf08015c8cfaaeb3def69d28"
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      odie "wsb 1.666.27449: no linux-arm64 build"
+      url "https://releases.bahramj.com/wsb/release/1.688.28724/wsb-1.688.28724-linux-arm64.tar.gz"
+      sha256 "6f8fcea64bcb3c4e2d0bf4be3fdb2bff8c5995b635fd26a8baa7b37d08b18f66"
     else
-      url "https://releases.bahramj.com/wsb/release/1.666.27449/wsb-1.666.27449-linux-x86_64.tar.gz"
-      sha256 "792f98a03c6f9e4c1ed8b5809a93289f66594edd393c9c7a91ad79d11ef37a82"
+      url "https://releases.bahramj.com/wsb/release/1.688.28724/wsb-1.688.28724-linux-x86_64.tar.gz"
+      sha256 "beaa1492f73e4308cc2c88d94c209705c8c9889035628de9c4221697f8e76633"
     end
   end
 
